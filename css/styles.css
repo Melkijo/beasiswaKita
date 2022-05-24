@@ -1,0 +1,191 @@
+body{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+.btn-custom {
+    border-radius: 2px;
+    padding: 5px 20px;
+    background-image: linear-gradient(to right, #B224EF 0%,#7579FF 100%);
+}
+.btn-custom-login{
+    border: 2px solid black;
+    background-color: #ffff;
+    filter: drop-shadow(-5px 5px 4px #a4a4a4);
+}
+.btn-custom-login:hover{
+    background-color: #ffff;
+    filter: none;
+}
+
+
+/* Navbar */
+
+.navbar-margin {
+    margin: 0 5%;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+/* Hero Section */
+
+.hero-section{
+    background-color: #CAF0F8;
+    padding: 50px 6%;
+}
+.hero-title{
+    margin-top: 50px;
+    font-weight: 700;
+}
+.hero-text{
+    font-weight: 300;
+}
+.hero-image{
+    width: 85%;
+}
+
+/* Tentang Section */
+.tentang-section{
+    padding: 50px 5%;
+}
+.tentang-image{
+    width: 85%;
+    filter: drop-shadow(-10px 10px 4px #a4a4a4);
+}
+.tentang-title{
+    font-weight: 600;
+}
+.tentang-text{
+    font-weight: 300;
+}
+
+/* Features Section */
+.features-section{
+    padding: 50px 10%;
+}
+.card {
+    border: 2px black solid;
+    width: 18rem;
+    filter: drop-shadow(-10px 10px 4px #a4a4a4);
+}
+.features-item{
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+/* Testimonial Section */
+
+.testimonial-section{
+    padding: 50px 7%;
+}
+.testimonial-title{
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.testimonial-item3{
+    width: 49%;
+    margin-top: 20px;
+}
+
+.ratio {
+    filter: drop-shadow(-10px 10px 4px #a4a4a4);
+    border: 2px black solid;
+    border-radius: 3px;
+}
+
+/* Sponsor Section */
+.sponsor-section{
+    padding: 50px 25%;
+}
+.sponsor-title{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.sponsor-item{
+    text-align: center;
+}
+
+.sponsor-image{
+    width: 100px;
+}
+
+/* CTA Section */
+
+.cta-section{
+    padding: 25px 7%;
+    background-color: #90E0EF;
+}
+.cta-title{
+    font-weight: 600;
+    padding-top: 50px;
+}
+.cta-item{
+    text-align: center;
+}
+.cta-image{
+    width: 300px;
+}
+
+/* footer Section */
+.footer-section{
+    background-color: #03045E;
+    padding: 25px 7% 0 ;
+    color: white;
+}
+.footer-logo{
+    width: 40%;
+    margin: 30px 0 10px;
+
+}
+.footer-title{
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.navigasi-item{
+    font-weight: 200;
+}
+.footer-icon{
+    width: 75%;
+}
+.copyright {
+    background-color: #03045E;
+    padding: 30px 7% 1px;
+    color: white;
+    text-align: center;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.copyright-text{
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+
+
+/*LOGIN PAGE */
+
+.login-left{
+    padding: 3% 5% ;
+}
+
+.login-logo {
+    padding-bottom: 75px;
+}
+.login-icon{
+    width: 25px;
+    margin-right: 10px;
+}
