@@ -176,6 +176,7 @@ body{
 }
 
 
+
 /*LOGIN PAGE */
 
 .login-left{
@@ -188,4 +189,14 @@ body{
 .login-icon{
     width: 25px;
     margin-right: 10px;
+}
+.rekomendasi-beasiswa-img{
+    width: 90%;
+    filter: drop-shadow(-10px 10px 4px #a4a4a4);
+    border: 2px black solid;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.rekomendasi-beasiswa-img:hover{
+    filter: none;
 }

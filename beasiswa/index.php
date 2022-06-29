@@ -1,4 +1,7 @@
-<html lang="en">
+<?php
+    $db = mysqli_connect("localhost", "root", "", "beasiswaKita");
+?>
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -19,7 +22,7 @@
     <!-- Navbar-->
     <div class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid navbar-margin">
-          <a class="navbar-brand" href="/index.html">
+          <a class="navbar-brand" href="/tubesWeb/index.html">
             <img src="img/logo.png" alt="" width="75%" class="d-inline-block align-text-top">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -28,19 +31,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="/index.html">Utama</a>
+                <a class="nav-link" href="/tubesWeb/index.html">Utama</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/tentang/tentang.html">Tentang</a>
+                <a class="nav-link" href="/tubesWeb/tentang/tentang.html">Tentang</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Berita/index.html">Berita</a>
+                <a class="nav-link" href="/tubesWeb/Berita/index.hphp">Berita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Beasiswa</a>
+                <a class="nav-link active" href="index.php">Beasiswa</a>
               </li>
               <li class="nav-item">
-                <a href="/login.html">
+                <a href="/tubesWeb/login.html">
                   <button type="button" class="btn btn-primary btn-custom">Daftar</button>
                 </a>
               </li>
@@ -61,73 +64,23 @@
     <!-- Beasiswa Section -->
     <div class="beasiswa-section">
         <div class="row mb-3 mr-0">
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 11.png" alt="">
+        <?php
+            $query = " select * from beasiswalist ";
+            $result = mysqli_query($db, $query);
+ 
+            while ($data = mysqli_fetch_assoc($result)) {
+        ?>
+                <div class="col-lg-3 mb-4">
+                    <a href="">
+                        <div class="rekomendasi-beasiswa1">
+                            <img class="rekomendasi-beasiswa-img" src="/tubesWeb/admin/img/<?php echo $data['gambar']; ?>">
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 21.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 22.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 18.png" alt="">
-                </div>
-            </div>
+            <?php
+                }
+            ?>
         </div>
-        <div class="row mb-3 mr-0">
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 12.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 13.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 15.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 19.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="row mb-3 mr-0">
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 17.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 16.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 14.png" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card mx-auto">
-                    <img class="sizeimg" src="img/image 20.png" alt="">
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!--Footer Section-->
@@ -141,16 +94,16 @@
             </div>
             <div class="col-lg-3">
                 <h5 class="footer-title">Navigasi</h5>
-                <a href="/index.html">
+                <a href="/index.html" style="text-decoration: none; color: white;">
                     <div class="navigasi-item">- Utama</div>                    
                 </a>
-                <a href="/tentang/tentang.html">
+                <a href="/tentang/tentang.html" style="text-decoration: none; color: white;">
                 <div class="navigasi-item">- Tentang</div>
                 </a>
-                <a href="/berita/index.html">
+                <a href="/berita/index.html" style="text-decoration: none; color: white;">
                 <div class="navigasi-item">- Berita</div>
                 </a>
-                <a href="index.html">
+                <a href="index.html" style="text-decoration: none; color: white;">
                 <div class="navigasi-item">- Beasiswa</div>
                 </a>
             </div>

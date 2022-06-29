@@ -1,3 +1,6 @@
+<?php
+    $db = mysqli_connect("localhost", "root", "", "beasiswaKita");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,17 +30,17 @@
             <li>
                 <h5>Menu</h5>
             </li>
-            <li class="nav-item w-100 mb-2">
-                <a href="dashboardUser.html" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
+            <li class="nav-item w-100 mb-2 ">
+                <a href="dashboardUser.php" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardBeasiswa.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
+                <a href="dashboardBeasiswa.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardEvent.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
+                <a href="dashboardEvent.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="#" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo4.png" alt="">Keluar</a>
+                <a href="index.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo4.png" alt="">Keluar</a>
             </li>
         </ul>
     </div>
@@ -54,35 +57,26 @@
     </div>
 
     <div class="dashboard-profile">
-        <div class="dashboard-profile-title">
-            <h5>Profile</h5>
+        <div class="dashboard-profile-title mb-3">
+            <h5>Rekomendasi Beasiswa Untukmu</h5>
         </div>
-        <form action="">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-            </div>
-            <div class="row mb-3">
-                <div class="col-lg-6">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1">
+        <div class="row">
+        <?php
+                $query = " select * from beasiswalist ";
+                $result = mysqli_query($db, $query);
+ 
+                while ($data = mysqli_fetch_assoc($result)) {
+            ?>
+                <div class="col-lg-3 mb-4">
+                    <a href="">
+                        <div class="rekomendasi-beasiswa1">
+                            <img class="rekomendasi-beasiswa-img" src="/tubesWeb/admin/img/<?php echo $data['gambar']; ?>">
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-6">
-                    <label for="exampleInputEmail1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputEmail1">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="exampleInputEmail1" class="form-label">Pendidikan</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                </div>
-                <div class="col-lg-6">
-                    <label for="exampleInputEmail1" class="form-label">Minat</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1">
-                </div>
-            </div>
-        </form>
+            <?php
+                }
+            ?>
     </div>
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,14 +12,14 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/stylesDashUser.css">
+    <link rel="stylesheet" href="/tubesWeb/css/stylesDashUser.css">
 </head>
 <body>
 
     <div class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
-        <a href="/index.html" class="navbar-brand text-light mt-2">
+        <a href="/tubesWeb/index.html" class="navbar-brand text-light mt-2">
             <div >
-                <img class="dashboard-logo" src="/img/logo.png" alt="">
+                <img class="dashboard-logo" src="/tubesWeb/img/logo.png" alt="">
             </div>
         </a>
         
@@ -27,14 +27,14 @@
             <li>
                 <h5>Menu</h5>
             </li>
-            <li class="nav-item w-100 mb-2 ">
-                <a href="dashboardAdmin.html" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
+            <li class="nav-item w-100 mb-2">
+                <a href="dashboardAdmin.php" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardAdminBeasiswa.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
+                <a href="dashboardAdminBeasiswa.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardEvent.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
+                <a href="dashboardAdminEvent.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
             </li>
             <li class="nav-item w-100 mb-2">
                 <a href="#" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo4.png" alt="">Keluar</a>
@@ -54,47 +54,25 @@
     </div>
 
     <div class="dashboard-profile">
-        <div class="dashboard-profile-title mb-3">
-            <h5>Daftar Beasiswa</h5>
+        <div class="dashboard-profile-title">
+            <h5>Profile</h5>
         </div>
-        <div class="row">
-            <div class="col-lg-3 mb-4">
-                <a href="">
-                    <div class="rekomendasi-beasiswa1">
-                        <img class="rekomendasi-beasiswa-img"src="/img/beasiswa1.png" alt="">
-                    </div>
-                </a>
+        <form action="">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
             </div>
-            <div class="col-lg-3 mb-4">
-                <a href="">
-                    <div class="rekomendasi-beasiswa2">
-                        <img class="rekomendasi-beasiswa-img"src="/img/beasiswa2.png" alt="">
-                    </div>
-                </a>
+            <div class="row mb-3">
+                <div class="col-lg-6">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="col-lg-6">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1">
+                </div>
             </div>
-            <div class="col-lg-3 mb-4">
-                <a href="">
-                    <div class="rekomendasi-beasiswa3">
-                        <img class="rekomendasi-beasiswa-img"src="/img/beasiswa3.png" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <a href="">
-                    <div class="rekomendasi-beasiswa4">
-                        <img class="rekomendasi-beasiswa-img"src="/img/beasiswa4.png" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <a href="">
-                    <div class="rekomendasi-beasiswa4">
-                        <img class="rekomendasi-beasiswa-img"src="/img/beasiswa5.png" alt="">
-                    </div>
-                </a>
-            </div>
-
-        </div>
+        </form>
     </div>
 
 

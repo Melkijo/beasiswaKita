@@ -162,3 +162,22 @@ body {
   font-size: 12px;
   margin-top: 10px;
 }
+
+.container-fluid{
+  padding: 0;
+}
+
+.row{
+  margin: 0;
+}
+
+.rekomendasi-beasiswa-img3{
+  width: 90%;
+  filter: drop-shadow(-10px 10px 4px #a4a4a4);
+  border: 2px black solid;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.rekomendasi-beasiswa-img:hover{
+  filter: none;
+}

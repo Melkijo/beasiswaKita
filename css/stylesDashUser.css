@@ -81,3 +81,14 @@ body{
     filter: none;
 }
 
+.addBeasiswa{
+    background-color: #7FE103;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    right: 200px;
+    bottom: 15px;
+    filter: drop-shadow(-10px 10px 4px #a4a4a4);
+}
+

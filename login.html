@@ -27,32 +27,30 @@
                 </div>
                 
                 <p>Tidak punya akun? <a href="Sign Up/index.html">Buat akun</a></p>
-                <form>
+                <form action="php/login.php" method="POST">
                     <div class="mb-4">
                       <label for="exampleInputEmail1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contoh@gmail.com">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="contoh@gmail.com" name="emailRegistrasi">
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" name="passwordRegistrasi">
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Inget saya</label>
                     </div>
                     <div class="d-grid gap-2">
-                        <a href="dashboardUser.html">
-                            <button type="submit" class="btn btn-primary btn-custom">Masuk</button>
-                        </a>
+                        <input type="submit" class="btn btn-primary btn-custom" name="login" value="masuk" />
                     </div>
                 </form>
                 <p class="text-center m-3">Atau</p>
                 <div class="d-grid gap-2">
-                    <a href="dashboardUser.html">
+                    <a href="dashboardUser.php">
                         <button type="submit" class="btn btn-custom-login"> <img class="login-icon" src="img/login-icon-google.png" alt="">Login dengan Google</button>
 
                     </a>
-                    <a href="admin/dashboardAdmin.html">
+                    <a href="admin/dashboardAdmin.php">
                     <button type="submit" class="btn btn-custom-login"> <img class="login-icon" src="img/login-icon-fb.png" alt="">Login dengan Facebook</button>
 
                     </a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeasiswaKita - Utama</title>
+    <title>BeasiswaKita - Event</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,16 +28,16 @@
                 <h5>Menu</h5>
             </li>
             <li class="nav-item w-100 mb-2 ">
-                <a href="dashboardUser.html" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
+                <a href="dashboardUser.php" class="nav-link"> <img class="dashboard-user-icon"src="img/user-logo1.png" alt=""> Profil</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardBeasiswa.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
+                <a href="dashboardBeasiswa.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo2.png" alt="">Beasiswa</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="dashboardEvent.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
+                <a href="dashboardEvent.php" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo3.png" alt="">Event</a>
             </li>
             <li class="nav-item w-100 mb-2">
-                <a href="#" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo4.png" alt="">Keluar</a>
+                <a href="index.html" class="nav-link"><img class="dashboard-user-icon"src="img/user-logo4.png" alt="">Keluar</a>
             </li>
         </ul>
     </div>
@@ -48,14 +48,14 @@
             </div>
             
             <div class="dashboard-greet">
-                <h5>Hello</h5>
+                <!-- <h5>Hello</h5> -->
             </div>
         </div>
     </div>
 
     <div class="dashboard-profile">
         <div class="dashboard-profile-title mb-3">
-            <h5>Rekomendasi Beasiswa Untukmu</h5>
+            <h5>Rekomendasi Event Untukmu</h5>
         </div>
         <div class="row">
             <div class="col-lg-3 mb-4">
