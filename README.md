@@ -1,7 +1,7 @@
 
 # mini-project-alterra #
 ### Demo ###
-[https://mini-project-alterra-sigma.vercel.app/](https://beasiswakita.vercel.app/)
+[https://beasiswa-kita.vercel.app/](https://beasiswa-kita.vercel.app/)
 ### Tech Stack ###
 React, Vite, TailwindCSS, EmailJS
 ### About ###
