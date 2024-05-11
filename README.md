@@ -15,4 +15,4 @@ This project serves to provide scholarship recommendations to users according to
 - searching
 - pagination
 ### Presentation ###
-[https://docs.google.com/presentation/d/1PWi-0RYgLNQieK9K1UDg4aNLcaw3akKGSYQkuNU2p5E/edit#slide=id.g241b21950d1_4_224](PPT)
+[https://docs.google.com/presentation/d/1PWi-0RYgLNQieK9K1UDg4aNLcaw3akKGSYQkuNU2p5E/edit#slide=id.g241b21950d1_4_224]([PPT](https://docs.google.com/presentation/d/1PWi-0RYgLNQieK9K1UDg4aNLcaw3akKGSYQkuNU2p5E/edit#slide=id.g241b21950d1_4_224))
