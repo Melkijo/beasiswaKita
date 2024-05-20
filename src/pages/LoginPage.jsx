@@ -102,17 +102,16 @@ export default function LoginPage() {
           <div className="hs-tooltip ">
             <div className=" hs-tooltip-toggle">
               <p className="mb-5 text-3xl font-bold">
-                Masuk{" "}
-                {/* <span className="text-lg font-medium">(&#63;)</span> */}
+                Masuk <span className="text-lg font-medium">(&#63;)</span>
               </p>
 
-              {/* <span
-                           className="absolute z-10 invisible inline-block p-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded-md shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible dark:bg-slate-700"
-                           role="tooltip"
-                        >
-                           admin@gmail.com <br />
-                           admin
-                        </span> */}
+              <span
+                className="absolute z-10 invisible inline-block p-1 text-xs font-medium text-white transition-opacity bg-gray-900 rounded-md shadow-sm opacity-0 hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible dark:bg-slate-700"
+                role="tooltip"
+              >
+                admin@gmail.com <br />
+                admin
+              </span>
             </div>
           </div>
 
