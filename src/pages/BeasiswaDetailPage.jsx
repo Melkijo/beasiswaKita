@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { dummyData } from "../static/data";
 
 const GET_BEASISWA = gql`
   subscription MyQuery($id: uuid!) {
@@ -31,33 +32,33 @@ export default function BeasiswaDetail() {
   return (
     <>
       <Navbar />
-      <div className="  mx-96  my-10 ">
-        <h1 className="text-3xl font-bold mb-5">{data.beasiswa_by_pk.nama}</h1>
+      <div className="my-10  mx-96">
+        <h1 className="mb-5 text-3xl font-bold">{data.beasiswa_by_pk.nama}</h1>
         <div className="w-full h-[500px]">
           <img
             src={data.beasiswa_by_pk.img_url}
-            className=" w-full h-full object-contain "
+            className="object-contain w-full h-full "
             alt=""
           />
         </div>
         <div className="flex justify-between">
           <div>
             <div>
-              <h3 className=" font-bold mt-5">Registrasi</h3>
+              <h3 className="mt-5 font-bold ">Registrasi</h3>
               <p>{data.beasiswa_by_pk.reg_date}</p>
             </div>
             <div>
-              <h3 className=" font-bold mt-5">Deadline</h3>
+              <h3 className="mt-5 font-bold ">Deadline</h3>
               <p>{data.beasiswa_by_pk.deadline_date}</p>
             </div>
           </div>
           <div>
             <div>
-              <h3 className=" font-bold mt-5">Domisili</h3>
+              <h3 className="mt-5 font-bold ">Domisili</h3>
               <p>{data.beasiswa_by_pk.domisili}</p>
             </div>
             <div>
-              <h3 className=" font-bold mt-5">Minimum Pendidikan</h3>
+              <h3 className="mt-5 font-bold ">Minimum Pendidikan</h3>
               <p>{data.beasiswa_by_pk.pendidikan}</p>
             </div>
           </div>
@@ -67,7 +68,7 @@ export default function BeasiswaDetail() {
           className="mt-7"
         ></p>
 
-        <h3 className=" font-bold mt-5">Link Pendaftaran</h3>
+        <h3 className="mt-5 font-bold ">Link Pendaftaran</h3>
         <a
           href={data.beasiswa_by_pk.link}
           target="_blank"

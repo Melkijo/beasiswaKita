@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
-import { gql, useQuery } from "@apollo/client";
+// import { gql, useQuery } from "@apollo/client";
 import { useAtom } from "jotai";
 import { authAtom } from "../components/Atoms";
 import BeasiswaCard from "../components/BeasiswaCard";
+import { dummyData } from "../static/data";
 
-const GET_BEASISWA = gql`
-  query GET_BEASISWA {
-    beasiswa {
-      nama
-      id
-      created_at
-      img_url
-      reg_date
-      deadline_date
-    }
-  }
-`;
+// const GET_BEASISWA = gql`
+//   query GET_BEASISWA {
+//     beasiswa {
+//       nama
+//       id
+//       created_at
+//       img_url
+//       reg_date
+//       deadline_date
+//     }
+//   }
+// `;
 export default function LandingPage() {
   const [user] = useAtom(authAtom);
 
@@ -158,12 +159,12 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* <div className="my-16 max-w-[90rem] mx-auto px-4">
+      <div className="my-16 max-w-[90rem] mx-auto px-4">
         <h3 className="text-4xl font-bold text-center mb-9 ">
           Informasi Beasiswa Terbaru
         </h3>
         <div className="grid justify-center grid-cols-1 gap-10 mb-7 mx- 28 md:grid-cols-4 sm:grid-cols-2">
-          {data.beasiswa.slice(0, 4).map((item) => (
+          {dummyData.data.beasiswa.slice(0, 4).map((item) => (
             <Link
               key={item.id}
               to={`/beasiswa/${item.id}`}
@@ -184,7 +185,7 @@ export default function LandingPage() {
             </button>
           </Link>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
